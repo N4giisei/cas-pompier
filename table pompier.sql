@@ -82,7 +82,8 @@ Numero INT,
 Id_Caserne INT, 
 Id_Type_Engin varchar(50), 
 PRIMARY KEY (Numero),
-FOREIGN KEY (Id_Caserne) REFERENCES Caserne(Id_Caserne)
+FOREIGN KEY (Id_Caserne) REFERENCES Caserne(Id_Caserne),
+FOREIGN KEY (Id_Type_Engin) REFERENCES type_engin(Id_Type_Engin)
 );
 
 create table GRADE (
